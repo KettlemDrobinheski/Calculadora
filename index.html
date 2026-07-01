@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Calculadora</title>
+     <link rel="stylesheet" hrel="style.css">
 </head>
 <body>
 
     <div class="calculadora">
-        <intup type="text" id="visor" readonly placeholder="0">
+        <input type="text" id="visor" readonly placeholder="0">
 
         <div class="botoes">
             <button class="botao-limpar" onclick="limpar()">C</button>
@@ -24,7 +25,7 @@
             <button onclick="adicionar('4')">4</button>
             <button onclick="adicionar('5')">5</button>
             <button onclick="adicionar('6')">6</button>
-            <button class="botal-igual" onclick="calcular()">=</button>
+            <button class="botao-igual" onclick="calcular()">=</button>
 
             <button onclick="adicionar('1')">1</button>
             <button onclick="adicionar('2')">2</button>
@@ -34,7 +35,6 @@
     </div>
     
     <script src="script.js"></script>
-    <link rel="stylesheet" hrel="style.css">
-    
+   
 </body>
 </html>
