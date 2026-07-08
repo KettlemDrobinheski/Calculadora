@@ -17,3 +17,17 @@ function calcular() {
         visor.value = 'erro';
     }
 }
+
+document.addEventListener('keydown', function(evento) {
+    const tecla = evento.key;
+    if ((tecla >= '0' && tecla <= '9') || tecla === '/' || tecla === '*' || tecla === '-' || tecla === '+' || tecla === '.') {
+        adicionar(tecla);
+    }
+    if (tecla === 'Enter' || tecla === '=') {
+        evento.preventDefault();
+        calcular();
+    }
+    if (tecla === 'Backspace' || tecla === 'c' || tecla === 'C') {
+        limpar();
+    }
+});
