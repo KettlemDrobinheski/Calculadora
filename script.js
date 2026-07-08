@@ -4,7 +4,7 @@ function adicionar(valor) {
     visor.value += valor;
 }
 
-function limpa() {
+function limpar() {
     visor.value = '';
 }
 
